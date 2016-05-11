@@ -1,5 +1,5 @@
 # Git Cheat Sheet
-## Reference 
+## Reference
 ### rebase to last 2 head
 ```bash
 $ git rebase --interactive HEAD~2
@@ -8,7 +8,7 @@ $ git rebase --interactive HEAD~2
 ```bash
 $ git reset --hard <commit>
 ```
-### revert everything from the HEAD back to the commit hash 
+### revert everything from the HEAD back to the commit hash
 This is a safe and easy way to rollback to a previous state.
 ```bash
 $ git revert --no-commit <commit>..HEAD
@@ -121,7 +121,7 @@ $ git clean -n
 $ git config --local[--global] alias.st status
 $ git st
 ```
-<script src="https://gist.github.com/celavi/1ada8b067031b05733e45c624e503e56.js"></script>
+### [My git aliases](https://gist.github.com/celavi/1ada8b067031b05733e45c624e503e56)
 ## Global templates
 ### gitignore
 ```bash
@@ -131,8 +131,7 @@ touch .gitignore_global
 # Go into edit mode so you can add the unwanted file listing
 vim .gitignore_global
 ```
-### commit messages
-<script src="https://gist.github.com/celavi/4f73461976cc6fa90b1d9f5e051d2f8b.js"></script>
+### [Template for commit messages](https://gist.github.com/celavi/4f73461976cc6fa90b1d9f5e051d2f8b)
 ```bash
 $ git config --global commit.template ~/.git_commit_msg.txt
 ```
@@ -156,4 +155,4 @@ o=0; git log --oneline | while read l; do printf "%+9s %s\n" "HEAD~${o}" "$l"; o
 ```bash
 git branch | grep -v "master" | sed 's/^[ *]*//' | sed 's/^/git branch -D /' | bash
 ```
-<script src="https://gist.github.com/celavi/46645418f62b5f87967869d430e34b0a.js"></script>
+### [Git Housekeeping: clean-up outdated branches in local and remote repositories](https://gist.github.com/celavi/46645418f62b5f87967869d430e34b0a)

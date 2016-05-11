@@ -155,4 +155,4 @@ o=0; git log --oneline | while read l; do printf "%+9s %s\n" "HEAD~${o}" "$l"; o
 ```bash
 git branch | grep -v "master" | sed 's/^[ *]*//' | sed 's/^/git branch -D /' | bash
 ```
-### [Git Housekeeping: clean-up outdated branches in local and remote repositories](https://gist.github.com/celavi/46645418f62b5f87967869d430e34b0a)
+## [Git Housekeeping: clean-up outdated branches in local and remote repositories](https://gist.github.com/celavi/46645418f62b5f87967869d430e34b0a)

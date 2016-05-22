@@ -1,4 +1,4 @@
-# Vagrant Cheat Sheet
+# Vagrant -  Create and Configure Virtual Development Environments
 ## Basics
 ### creat vagrant box from precise64
 ```bash

@@ -1,6 +1,4 @@
 # Markdown
-* Chocolatey
-* Composer
 * docker
 * Grunt
 * Liquibase

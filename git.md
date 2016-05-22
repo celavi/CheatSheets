@@ -1,4 +1,4 @@
-# Git Cheat Sheet
+# Git - Distributed Version Control System
 ## Reference
 ### rebase to last 2 head
 ```bash

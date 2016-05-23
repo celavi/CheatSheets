@@ -136,5 +136,5 @@ $ composer status -v
 ### 6. Be ready for production
 Just a reminder, before deploying your code in production, don't forget to optimize the autoloader
 ```bash
-$ composer dump-autolad --optimize
+$ composer dump-autoload --optimize --no-dev
 ```

@@ -104,6 +104,7 @@ $ composer update foo/bar
 This will only install or update the library (plus its dependencies) and overwrite the *composer.lock*. You could get:
 > Warning: The lock file is not up to date with the latest changes in composer.json, you may be getting outdated dependencies, run update to update them.
 Ok, so how to proceed? The update command is the one which update the lock file. But if I just add a description, I may not want to update any library. In that case use the --lock parameter.
+
 ```bash
 $ composer update --lock
 ```

@@ -115,6 +115,23 @@ $ git clean -fd
 # Tip: If you'd like to see first which files will be untracked before actually removing them, you can do a safe clean test by running:
 $ git clean -n
 ```
+### Combining multiple commits before pushing to origin
+```bash
+# find the commit ID of the commit from which you want to start squashing and do
+$ git rebase -i <commit>
+# or showing all of the commits you have made after the last commit in origin/master.
+$ git rebase -i origin/master
+```
+### Squash feature branch commits to merge into the release branch
+If you decide to merge and squash your commits, this will create a new commit but only in the release branch, therefore the history of the feature branch will remain intact.
+Here's an example on how to achieve this. You'll end up with one commit only in your release branch, while keeping the feature history intact.
+```bash
+$ git fetch origin
+$ git checkout [release-branch]
+$ git rebase origin/[release-branch]
+$ git merge —squash —no-commit [feature-branch]
+$ git commit -m 'Merge X into Y'
+```
 ## Aliases
 ### creating aliases
 ```bash

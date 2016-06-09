@@ -1,5 +1,7 @@
 # Vagrant -  Create and Configure Virtual Development Environments
+
 ## Basics
+
 ### creat vagrant box from precise64
 ```bash
 mkdir some_folder
@@ -38,6 +40,7 @@ vagrant ssh-config
 ssh-copy-id vagrant@127.0.0.1 -p <port_number>
 ```
 ## Plugins
+
 ### list all plugins
 ```bash
 vagrant plugin list

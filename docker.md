@@ -1,5 +1,6 @@
 # Docker - An open platform for distributed applications
 Docker requires a 64-bit installation of any popular linux Distro.
+
 ## Instalation on Ubuntu
 ```bash
 # Update package information, ensure that APT works with the https method, and that CA certificates are installed.
@@ -82,6 +83,7 @@ $ sudo docker search dokuwiki
 $ sudo docker pull mprasil/dokuwiki
 ```
 ## Docker Workflow
+
 ### the phusion base image
 ```bash
 # https://github.com/phusion/baseimage-docker

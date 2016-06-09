@@ -1,4 +1,5 @@
 # Chocolatey - Machine Package Manager for Windows
+
 ## Let's get Chocolatey!
 Easy Install!
 Open administrative PowerShell (Ensure Get-ExecutionPolicy is at least RemoteSigned).
@@ -10,6 +11,7 @@ Set-ExecutionPolicy RemoteSigned
 PS C:\>iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 ## Chocolatey basics
+
 ### Installing programs Chocolatey style
 Once you’ve got Chocolatey up and running, it’s time to start installing programs. Open administrative PowerShell. If you wanted to install VLC you’d type:
 ```bash

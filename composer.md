@@ -1,6 +1,8 @@
 # Composer - Dependency Manager for PHP
+
 ## Composer Cheat Sheet for developers
 [http://composer.json.jolicode.com/](http://composer.json.jolicode.com/)
+
 ## Install composer globally
 ```bash
 $ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -31,6 +33,7 @@ To install the defined dependencies for your project, just run the install comma
 $ composer install
 ```
 ## Specifying Versions
+
 ### Version Range
 
 Using comparison operators you can grab version higher than 1.3, lower than 1.8 or follow an even more complex ruleset by using AND and OR logic. Operators used can be >, <, >=, <= and !=. AND logic is represented by a space or comma, OR logic is represented by double pipes: ||.

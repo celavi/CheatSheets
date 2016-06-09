@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.0.4] - 2016-06-09
+* CCZE and Multitail
+* Grunt
+* MySQL One Liners
+* Vim
+
 ## [0.0.3] - 2016-05-23
 ### Added
 * Byobu

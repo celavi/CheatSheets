@@ -1,4 +1,5 @@
 # Liquibase - Source Control For Your Database
+
 ## Install
 * [Download Liquibase](http://www.liquibase.org/download/index.html)
 * Download appropriate java conncector. Eg. [MySQL connector](https://dev.mysql.com/downloads/connector/j/)
@@ -44,6 +45,7 @@ liquibase rollback 1.0
 ```
 ## Diff between two databases
 We need to combine liquibase with mysql command line tools
+
 ### Liquibase part
 Example Parameters for liquibase.properties files
 ```bash

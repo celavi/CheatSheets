@@ -1,5 +1,7 @@
 # Git - Distributed Version Control System
+
 ## Reference
+
 ### rebase to last 2 head
 ```bash
 $ git rebase --interactive HEAD~2

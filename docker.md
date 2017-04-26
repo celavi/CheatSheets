@@ -158,7 +158,7 @@ docker ps --filter status=dead --filter status=exited -aq | xargs -r docker rm -
 docker images --no-trunc | grep '<none>' | awk '{ print $3 }' | xargs -r docker rmi
 ```
 
-### remove unused volumes
+### Remove unused volumes
 ```bash
 docker volume ls -qf dangling=true | xargs -r docker volume rm
 ```

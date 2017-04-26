@@ -145,3 +145,20 @@ RUN ["mvn","package"]
 # run the application
 CMD ["mvn","exec:java"]
 ```
+
+## Cleaning up docker to reclaim disk space
+
+### Remove exited containers
+```bash
+docker ps --filter status=dead --filter status=exited -aq | xargs -r docker rm -v
+```
+
+# Remove unused images:
+```bash
+docker images --no-trunc | grep '<none>' | awk '{ print $3 }' | xargs -r docker rmi
+```
+
+### remove unused volumes
+```bash
+docker volume ls -qf dangling=true | xargs -r docker volume rm
+```

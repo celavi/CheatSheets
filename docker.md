@@ -153,7 +153,7 @@ CMD ["mvn","exec:java"]
 docker ps --filter status=dead --filter status=exited -aq | xargs -r docker rm -v
 ```
 
-# Remove unused images:
+### Remove unused images:
 ```bash
 docker images --no-trunc | grep '<none>' | awk '{ print $3 }' | xargs -r docker rmi
 ```
